@@ -1,0 +1,15 @@
+.social-links a {
+  color: #be122a; /* Default */
+  margin: 0 0.5rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-links a:hover {
+  color: #ff007b; /* Hover */
+  transform: scale(1.2);
+}
+
+.social-links svg {
+  width: 24px;
+  height: 24px;
+}

@@ -1,0 +1,15 @@
+.jump-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #fff;
+  color: #000;
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+  display: none;
+  z-index: 99999;
+}
+.jump-to-top:hover {
+  background-color: #555;
+}
