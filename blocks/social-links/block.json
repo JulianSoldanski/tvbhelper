@@ -1,17 +1,21 @@
 {
     "$schema": "https://schemas.wp.org/trunk/block.json",
     "apiVersion": 3,
-    "name": "tvb-helper/blocks/social-links",
+    "name": "tvb-helper/social-links",
     "version": "1.0.0",
     "title": "TVB Social Links",
     "category": "widgets",
     "icon": "share",
-    "description": "Statische Social Media Links TVB",
-    "keywords": ["social", "links", "media"],
+    "description": "Statische Social Media Links für TVB09",
+    "keywords": ["social", "links", "media", "tvb", "instagram", "facebook"],
     "textdomain": "tvb-helper",
     "style": "file:./style.css",
+    "editorScript": "file:./editor.js",
     "render": "file:./render.php",
     "supports": {
-        "multiple": true
-    }
+        "multiple": true,
+        "html": false,
+        "align": ["left", "center", "right", "wide", "full"]
+    },
+    "example": {}
 }

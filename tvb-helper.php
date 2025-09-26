@@ -14,10 +14,12 @@ function tvb_scripts_enqueue() {
 }
 add_action('wp_enqueue_scripts', 'tvb_scripts_enqueue');
 
-// Registerdd
+// Register blocks and patterns
 function tvb_register() {
+    // Register Social Links Pattern
     include plugin_dir_path( __FILE__ ) . 'patterns/social-links.php';
     
+    // Register Social Links Block
     register_block_type( __DIR__ . '/blocks/social-links' );
 }
 add_action( 'init', 'tvb_register' );

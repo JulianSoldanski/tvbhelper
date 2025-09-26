@@ -1,15 +1,42 @@
+/* TVB Social Links Pattern & Block Styling */
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
 .social-links a {
-  color: #be122a; /* Default */
-  margin: 0 0.5rem;
-  transition: color 0.3s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  border: 2px solid #be122a;
+  border-radius: 50%;
+  color: #be122a;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(190, 18, 42, 0.1);
 }
 
 .social-links a:hover {
-  color: #ff007b; /* Hover */
-  transform: scale(1.2);
+  background-color: #be122a;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(190, 18, 42, 0.3);
+}
+
+.social-links a:focus {
+  outline: 2px solid #be122a;
+  outline-offset: 2px;
 }
 
 .social-links svg {
   width: 24px;
   height: 24px;
+  fill: currentColor;
 }
